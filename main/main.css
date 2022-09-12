@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.dummy{
+    padding: 30px;
+}
+
+.dummy__input:checked ~ .dummy__controller{
+    background-image: url(../img/real.png);
+    background-color: white;
+}
+
+.dummy__label + .dummy__controller{
+    background-color: lightcyan;
+}
+
+.dummy__controller{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    background-color: lightgrey;
+    border: 1px solid lightpink;
+    border-radius: 5px;    
+}
